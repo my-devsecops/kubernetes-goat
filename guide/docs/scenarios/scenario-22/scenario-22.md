@@ -101,7 +101,7 @@ Refer to [https://kyverno.io/policies/](https://kyverno.io/policies/) for more p
 - Let's run the Kubernetes Goat Secrets pod in the `vault` namespace
 
 ``` bash
-kubectl --namespace vault run kubernetes-goat-secrets --image=madhuakula/k8s-goat-info-app --port=5000 --restart=Never
+kubectl --namespace vault run kubernetes-goat-secrets --image=k8sgoat.azurecr.io/info-app --port=5000 --restart=Never
 ```
 
 ![kubernetes-goat-secrets pod deploy](../images/sc-22-2.png)

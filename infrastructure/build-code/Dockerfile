@@ -1,5 +1,5 @@
 FROM alpine:latest
-LABEL MAINTAINER="Madhu Akula" INFO="Kubernetes Goat"
+LABEL MAINTAINER="Ayman Mahmoud" INFO="Kubernetes Goat"
 
 COPY app-arm64.tar.gz /app-arm64.tar.gz
 COPY app.tar.gz /app.tar.gz

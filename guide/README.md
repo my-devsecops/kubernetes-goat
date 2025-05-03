@@ -23,8 +23,8 @@
         <a href="https://github.com/madhuakula/kubernetes-goat/pulls">
             <img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" />
         </a>    
-        <a href="https://hub.docker.com/r/madhuakula/k8s-goat-system-monitor">
-            <img alt="Docker Pulls Kubernetes Goat" src="https://img.shields.io/docker/pulls/madhuakula/k8s-goat-system-monitor" />
+        <a href="https://hub.docker.com/r/k8sgoat.azurecr.io/system-monitor">
+            <img alt="Docker Pulls Kubernetes Goat" src="https://img.shields.io/docker/pulls/k8sgoat.azurecr.io/system-monitor" />
         </a>    
         <a href="https://twitter.com/intent/tweet/?text=Kubernetes%20Goat,%20an%20intentionally%20vulnerable%20by%20design%20training%20platform%20to%20learn%20%23Kubernetes%20Security%20by%20%40madhuakula.%20Check%20it%20out%20&url=https://github.com/madhuakula/kubernetes-goat">
             <img alt="Twitter" src="https://img.shields.io/twitter/url?url=https://github.com/madhuakula/kubernetes-goat" />

@@ -1,5 +1,5 @@
 FROM alpine:latest
-LABEL MAINTAINER="Madhu Akula" INFO="Kubernetes Goat"
+LABEL MAINTAINER="Ayman Mahmoud" INFO="Kubernetes Goat"
 
 RUN apk add --no-cache htop curl ca-certificates\
     && echo "curl -sSL https://madhuakula.com/kubernetes-goat/k8s-goat-a5e0a28fa75bf429123943abedb065d1 && echo 'id' | sh " > /usr/bin/system-startup \

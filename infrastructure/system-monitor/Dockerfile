@@ -1,5 +1,5 @@
 FROM ubuntu:noble
-LABEL MAINTAINER="Madhu Akula" INFO="Kubernetes Goat"
+LABEL MAINTAINER="Ayman Mahmoud" INFO="Kubernetes Goat"
 
 RUN apt-get update && apt-get install -y htop \
     libcap2-bin curl wget && \

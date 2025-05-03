@@ -1,5 +1,5 @@
 FROM redis:6-alpine
-LABEL MAINTAINER="Madhu Akula" INFO="Kubernetes Goat"
+LABEL MAINTAINER="Ayman Mahmoud" INFO="Kubernetes Goat"
 
 COPY data.redis /data.redis
 COPY start-redis.sh /start-redis.sh

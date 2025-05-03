@@ -1,5 +1,5 @@
 FROM alpine AS build
-LABEL MAINTAINER="Madhu Akula" INFO="Kubernetes Goat"
+LABEL MAINTAINER="Ayman Mahmoud" INFO="Kubernetes Goat"
 
 WORKDIR /build
 ENV HUGO_VERSION=0.84.0
@@ -21,6 +21,6 @@ RUN git clone https://github.com/madhuakula/toc-page-hugo-theme.git themes/toc-p
     && /usr/bin/hugo
 
 FROM nginx:alpine-slim
-LABEL MAINTAINER="Madhu Akula" INFO="Kubernetes Goat"
+LABEL MAINTAINER="Ayman Mahmoud" INFO="Kubernetes Goat"
 
 COPY --from=build /build/public /usr/share/nginx/html

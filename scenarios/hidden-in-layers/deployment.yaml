@@ -9,7 +9,7 @@ spec:
     spec:
       containers:
       - name: hidden-in-layers
-        image: madhuakula/k8s-goat-hidden-in-layers
+        image: k8sgoat.azurecr.io/hidden-in-layers
         # command:
         #  - "bin/sh"
         #  - "-c"

@@ -1,5 +1,5 @@
 FROM ubuntu:noble
-LABEL MAINTAINER="Madhu Akula" INFO="Kubernetes Goat"
+LABEL MAINTAINER="Ayman Mahmoud" INFO="Kubernetes Goat"
 
 RUN apt update && apt install stress-ng curl wget -y \
     && cd /tmp; \

@@ -1,5 +1,5 @@
 FROM node:alpine
-LABEL MAINTAINER="Madhu Akula" INFO="Kubernetes Goat"
+LABEL MAINTAINER="Ayman Mahmoud" INFO="Kubernetes Goat"
 
 WORKDIR /usr/src/app
 

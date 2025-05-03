@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: poor-registry
-        image: madhuakula/k8s-goat-poor-registry
+        image: k8sgoat.azurecr.io/poor-registry
         resources:
           limits:
             memory: "50Mi"

@@ -87,7 +87,7 @@ curl http://127.0.0.1:1235/v2/_catalog
 - We can get more information about the specific image using the image name with a tag with a manifest endpoint
 
 ```bash
-curl http://127.0.0.1:1235/v2/madhuakula/k8s-goat-users-repo/manifests/latest
+curl http://127.0.0.1:1235/v2/k8sgoat.azurecr.io/users-repo/manifests/latest
 ```
 
 ![Scenario 7 image info](../images/sc-7-3.png)
@@ -95,7 +95,7 @@ curl http://127.0.0.1:1235/v2/madhuakula/k8s-goat-users-repo/manifests/latest
 - Now we can see this container image has ENV variables that contain API key information, so we can quickly `grep` that out
 
 ```bash
-curl http://127.0.0.1:1235/v2/madhuakula/k8s-goat-users-repo/manifests/latest | grep -i env 
+curl http://127.0.0.1:1235/v2/k8sgoat.azurecr.io/users-repo/manifests/latest | grep -i env 
 ```
 
 ![Scenario 7 api key info](../images/sc-7-4.png)

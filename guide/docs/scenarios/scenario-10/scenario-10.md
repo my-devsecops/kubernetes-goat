@@ -92,12 +92,12 @@ kubectl get pod batch-check-job-xxxx -o yaml
 
 ![Scenario 10 get pod info](../images/sc-10-3.png)
 
-- We can see that this job pod is running `madhuakula/k8s-goat-batch-check` docker container image
+- We can see that this job pod is running `k8sgoat.azurecr.io/batch-check` docker container image
 
 - Now we can perform an analysis of this container image, by looking at its layers and how it got created. Here we can see that it contains a command executing the external script in the build time in one of the layer
 
 ```bash
-docker history --no-trunc madhuakula/k8s-goat-batch-check
+docker history --no-trunc k8sgoat.azurecr.io/batch-check
 ```
 
 ![Scenario 10 get docker history](../images/sc-10-4.png)

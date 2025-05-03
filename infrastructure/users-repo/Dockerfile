@@ -1,5 +1,5 @@
 FROM python:alpine
-LABEL MAINTAINER="Madhu Akula" INFO="Kubernetes Goat"
+LABEL MAINTAINER="Ayman Mahmoud" INFO="Kubernetes Goat"
 
 ENV API_KEY="k8s-goat-cf658c56a501385205cc6d2dafee8fc1"
 

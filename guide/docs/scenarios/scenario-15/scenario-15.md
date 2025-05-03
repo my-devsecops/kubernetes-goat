@@ -71,7 +71,7 @@ Try exploring all files, environment variables, etc in the running container. Ne
 - Docker CLI is an amazing tool with lots of features, let's start with inspecting the image
 
 ```bash
-docker inspect madhuakula/k8s-goat-hidden-in-layers
+docker inspect k8sgoat.azurecr.io/hidden-in-layers
 ```
 
 ![Scenario 15 docker inspect](../images/sc-15-1.png)
@@ -85,7 +85,7 @@ docker inspect madhuakula/k8s-goat-hidden-in-layers
 - We can explore each layer by using the default `docker history` command
 
 ```bash
-docker history --no-trunc madhuakula/k8s-goat-hidden-in-layers
+docker history --no-trunc k8sgoat.azurecr.io/hidden-in-layers
 ```
 
 ![Scenario 15 docker history](../images/sc-15-2.png)
@@ -99,7 +99,7 @@ alias dfimage="docker run -v /var/run/docker.sock:/var/run/docker.sock --rm alpi
 ```
 
 ```bash
-dfimage -sV=1.36 madhuakula/k8s-goat-hidden-in-layers
+dfimage -sV=1.36 k8sgoat.azurecr.io/hidden-in-layers
 ```
 
 ![Scenario 15 dockerfile](../images/sc-15-3.png)
@@ -121,7 +121,7 @@ From all the above analyses, we can see some significant changes in these two fi
 - We can't see `/root/secret.txt` as it is deleted from the next layers. We can recover the `/root/secret.txt` by leveraging the docker built-in command to export the docker image as a tar file
 
 ```bash
-docker save madhuakula/k8s-goat-hidden-in-layers -o hidden-in-layers.tar
+docker save k8sgoat.azurecr.io/hidden-in-layers -o hidden-in-layers.tar
 ```
 
 - Now we have the artifact and we can extract the tar file to explore the layers

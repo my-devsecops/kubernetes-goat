@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: health-check
-        image: madhuakula/k8s-goat-health-check
+        image: k8sgoat.azurecr.io/health-check
         resources:
           limits:
             memory: "100Mi"

@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: madhuakula/k8s-goat-metadata-db
+  repository: k8sgoat.azurecr.io/metadata-db
   tag: latest
   pullPolicy: Always
 

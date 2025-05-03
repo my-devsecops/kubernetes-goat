@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: kubernetes-goat-home
-        image: madhuakula/k8s-goat-home
+        image: k8sgoat.azurecr.io/home
         resources:
           limits:
             memory: "50Mi"
